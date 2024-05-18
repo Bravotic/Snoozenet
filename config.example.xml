@@ -1,0 +1,17 @@
+<config>
+	<server>
+		<!-- Our host IP, at the moment this has no effect -->
+		<host>127.0.0.1</host>
+
+		<!-- The port we are listening on -->
+		<port>119</port>
+	</server>
+
+	<!-- The backend that serves us the news -->
+	<!-- At the moment only 'fs' is supported -->
+	<backend>fs</backend>
+	<fs>
+		<!-- Where our news files will be stored -->
+		<fs-path>/tmp/news</fs-path>
+	</fs>
+</config>
