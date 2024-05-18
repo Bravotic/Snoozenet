@@ -36,3 +36,7 @@ $ mvn package
 To run Snoozenet, you can simply run `java -jar Snoozenet.jar`. Please not that the actual jar file will likely be named different.
 
 Snoozenet does not need a config file to run, however on is provided in the root of this repo as an example. Simply rename it to "config.xml" and have it in the same folder from which you executed `Snooznet.jar` 
+
+# Backends
+
+For Snoozenet to work, it needs to store its articles (the messages posted by the user) somewhere. The current only backend is called "fs", and stores articles in the .eml format in a file structure. Please make sure to configure this in the config.xml, as the default location for these is the temp folder. Meaning when the server is shut down, all message history is lost.
